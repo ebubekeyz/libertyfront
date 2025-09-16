@@ -194,20 +194,24 @@ then close all select boxes: */
 
   const navigate = useNavigate();
   const { user, account, allUsers } = useSelector((state) => state.userState);
-  const mainAcc = Object.values(account)
-  const len = mainAcc.length - 1
+  // const mainAcc = Object.values(account)
+  // const len = mainAcc.length - 1
 
-  const id = mainAcc[len]._id
-  const status = mainAcc[len].status
+  // const id = mainAcc[len]._id
+  // const status = mainAcc[len].status
 
 
-
+const id = Object.values(account)[0]._id
+const status = Object.values(account)[0].status
+const accountNumber = Object.values(account)[0].accountNumber
+const accountName = Object.values(account)[0].name
+const accountPin = Object.values(account)[0].pin
 
   const [show, setShow] = useState(false);
 
-  const length = Object.values(account).length - 1;
-  const mainAccount = Object.values(account);
-  console.log(mainAccount[0].bank);
+  // const length = Object.values(account).length - 1;
+  // const mainAccount = Object.values(account);
+  // console.log(mainAccount[0].bank);
 
   const close = () => {
     const alertImg = document.querySelector('.alert-img');
@@ -274,7 +278,7 @@ then close all select boxes: */
     const msg = document.querySelector('.msg');
     const msg1 = document.querySelector('.msg1');
  
-    if (pin === mainAccount[length].pin && status === 'false') {
+    if (pin === accountPin && status === 'false') {
       popup.classList.remove('showPopup');
       msg1.style.display = 'block';
 
