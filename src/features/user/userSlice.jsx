@@ -70,7 +70,7 @@ export const getAccount = createAsyncThunk(
     const user = thunkAPI.getState().userState.user;
     try {
       const resp = await customFetch.get(
-        `/account/allAccount?sort=latest&user=${user._id}}`
+        `/account/allAccount?sort=latest&user=${user._id}`
       );
       // console.log(resp.data.account);
       thunkAPI.dispatch(addAccount(resp.data.account));

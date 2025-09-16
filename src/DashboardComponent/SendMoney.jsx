@@ -199,7 +199,7 @@ then close all select boxes: */
 
   // const id = mainAcc[len]._id
   // const status = mainAcc[len].status
-
+console.log(account)
 
 const id = Object.values(account)[0]._id
 const status = Object.values(account)[0].status
