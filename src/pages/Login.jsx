@@ -184,7 +184,7 @@ const Login = () => {
               className="link"
               style={{ color: 'var(--clr-grey-6)', fontSize: '0.9rem' }}
             >
-              Register if don't have an account
+              Register if you don't have an account
             </Link>
 
             <Link
