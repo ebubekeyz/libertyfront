@@ -3,7 +3,7 @@ import axios from 'axios';
 let productionUrl =
   process.env.NODE_ENV !== 'production'
     ? 'http://localhost:7000/api'
-    : 'https://liberty-creditunion-main.onrender.com/api';
+    : 'https://libertybackend.netlify.app/.netlify/functions/api';
 
 // let productionUrl = 'https://libertycredit-union.onrender.com/api';
 
