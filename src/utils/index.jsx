@@ -2,8 +2,8 @@ import axios from 'axios';
 
 let productionUrl =
   process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:7000/.netlify/functions/api'
-    : 'https://libertybackend.netlify.app/.netlify/functions/api';
+    ? 'http://localhost:7000'
+    : 'https://libertybackend.onrender.com/api';
 
 // let productionUrl = 'https://libertycredit-union.onrender.com/api';
 

@@ -16,7 +16,7 @@ export const action =
     const formData = await request.formData();
     const data = Object.fromEntries(formData);
     const popup = document.querySelector('.popup');
-console.log(data)
+
     try {
       const response = await customFetch.post('/auth/local', data);
 
