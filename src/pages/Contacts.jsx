@@ -21,7 +21,7 @@ const Contacts = () => {
           <p style={{ textAlign: 'center' }}>
             Feel free to email us at{' '}
             <span style={{ color: 'var(--clr-primary-4)' }}>
-            support@liberty-creditunion.com
+            support@liberty-cu.com
             </span>{' '}
             for any enquiry on our services.
           </p>
