@@ -10,7 +10,7 @@ let productionUrl =
 export const customFetch = axios.create({
   baseURL: productionUrl,
 });
-
+// ggg
 export const formatPrice = (price) => {
   const dollarsAmount = new Intl.NumberFormat('en-US', {
     style: 'currency',
